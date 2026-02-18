@@ -34,10 +34,10 @@ pantalk stream --bot ops-bot --notify
 
 ### Repositories
 
-| Repo | Description |
-| ---- | ----------- |
-| [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation |
-| [skills](https://github.com/pantalk/skills) | Agent skill definitions for AI coding agents |
+| Repo                                          | Description                                  |
+| --------------------------------------------- | -------------------------------------------- |
+| [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation               |
+| [skills](https://github.com/pantalk/skills)   | Agent skill definitions for AI coding agents |
 
 ### Get Started
 
