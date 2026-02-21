@@ -14,7 +14,7 @@
 
 ---
 
-Pantalk is a lightweight daemon + CLI that lets AI agents send, receive, and stream messages across **Slack**, **Discord**, **Mattermost**, and **Telegram** through a single interface.
+Pantalk is a lightweight daemon + CLI that lets AI agents send, receive, and stream messages across **Slack**, **Discord**, **Mattermost**, **Telegram**, **WhatsApp**, **IRC**, **Matrix**, **Twilio**, and **Zulip** through a single interface.
 
 One daemon handles auth, sessions, and reconnects. Your agent talks through simple CLI commands or a Unix domain socket with a JSON protocol. No SDKs, no libraries — just shell commands that work with any language.
 
@@ -38,6 +38,10 @@ pantalk stream --bot ops-bot --notify
 | --------------------------------------------- | -------------------------------------------- |
 | [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation               |
 | [skills](https://github.com/pantalk/skills)   | Agent skill definitions for AI coding agents |
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=pantalk/pantalk&type=date&legend=top-left)](https://www.star-history.com/#pantalk/pantalk&type=date&legend=top-left)
 
 ### Get Started
 
