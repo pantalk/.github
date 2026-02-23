@@ -39,6 +39,14 @@ pantalk stream --bot ops-bot --notify
 | [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation               |
 | [skills](https://github.com/pantalk/skills)   | Agent skill definitions for AI coding agents |
 
+### Companion Project
+
+| Repo                                          | Description                                          |
+| --------------------------------------------- | ---------------------------------------------------- |
+| [mcpshim](https://github.com/mcpshim/mcpshim) | Turn remote MCP servers into local command workflows |
+
+Pantalk gives your agent a voice. [mcpshim](https://mcpshim.dev) gives it tools. Together they form a complete agent infrastructure stack.
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=pantalk/pantalk&type=date&legend=top-left)](https://www.star-history.com/#pantalk/pantalk&type=date&legend=top-left)
