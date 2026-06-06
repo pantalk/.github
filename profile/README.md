@@ -16,7 +16,7 @@
 
 Pantalk is a lightweight daemon + CLI that lets AI agents send, receive, and stream messages across **Slack**, **Discord**, **Mattermost**, **Telegram**, **WhatsApp**, **IRC**, **Matrix**, **Twilio**, and **Zulip** through a single interface.
 
-One daemon handles auth, sessions, and reconnects. Your agent talks through simple CLI commands or a Unix domain socket with a JSON protocol. No SDKs, no libraries — just shell commands that work with any language.
+One daemon handles auth, sessions, and reconnects. Your agent talks through simple CLI commands or a Unix domain socket with a JSON protocol. No SDKs, no libraries - just shell commands that work with any language.
 
 ```bash
 # Send a message to any platform
@@ -39,13 +39,14 @@ pantalk stream --bot ops-bot --notify
 | [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation               |
 | [skills](https://github.com/pantalk/skills)   | Agent skill definitions for AI coding agents |
 
-### Companion Project
+### Companion Projects
 
-| Repo                                          | Description                                          |
-| --------------------------------------------- | ---------------------------------------------------- |
-| [mcpshim](https://github.com/mcpshim/mcpshim) | Turn remote MCP servers into local command workflows |
+| Repo                                          | Description                                  |
+| --------------------------------------------- | -------------------------------------------- |
+| [MCPShim](https://github.com/mcpshim/mcpshim) | Use any MCP server as a standard CLI command |
+| [crmkit](https://github.com/crmkit/crmkit)    | An agent-first CRM your AI drives directly   |
 
-Pantalk gives your agent a voice. [mcpshim](https://mcpshim.dev) gives it tools. Together they form a complete agent infrastructure stack.
+Pantalk gives your agent a voice. [MCPShim](https://mcpshim.dev) gives it tools. Together they form a complete agent infrastructure stack.
 
 ## Star History
 
