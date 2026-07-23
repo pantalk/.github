@@ -37,6 +37,7 @@ pantalk stream --bot ops-bot --notify
 | Repo                                          | Description                                  |
 | --------------------------------------------- | -------------------------------------------- |
 | [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation               |
+| [station](https://github.com/pantalk/station) | Pantalk Station desktop environment          |
 | [skills](https://github.com/pantalk/skills)   | Agent skill definitions for AI coding agents |
 
 ### Companion Projects
@@ -47,10 +48,6 @@ pantalk stream --bot ops-bot --notify
 | [crmkit](https://github.com/crmkit/crmkit)    | An agent-first CRM your AI drives directly   |
 
 Pantalk gives your agent a voice. [MCPShim](https://mcpshim.dev) gives it tools. Together they form a complete agent infrastructure stack.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=pantalk/pantalk&type=date&legend=top-left)](https://www.star-history.com/#pantalk/pantalk&type=date&legend=top-left)
 
 ### Get Started
 
