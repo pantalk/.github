@@ -10,12 +10,16 @@
 </p>
 
 <p align="center">
-  <a href="https://pantalk.dev">Website</a> · <a href="https://github.com/pantalk/pantalk">Documentation</a> · <a href="https://github.com/pantalk/station">Station</a> · <a href="https://github.com/pantalk/skills">Skills</a>
+  <a href="https://pantalk.dev">Website</a> · <a href="https://github.com/pantalk/pantalk">Documentation</a> · <a href="https://github.com/pantalk/ghost">Ghost</a> · <a href="https://github.com/pantalk/skills">Skills</a>
 </p>
 
 ---
 
-**Claude Code**, **Codex**, **Copilot**, **Gemini CLI**, **Goose**, **OpenCode**, **Aider** - Pantalk puts the harness you already run into **Slack**, **Discord**, **Mattermost**, **Telegram**, **WhatsApp**, **IRC**, **Matrix**, **Twilio/SMS**, and **Zulip**.
+**Claude Code**, **Codex**, **Kimi Code**, **zot**, **Copilot**, **Gemini CLI**,
+**Goose**, **OpenCode**, **Aider** - Pantalk puts the harness you already run
+into **Slack**, **Discord**, **Mattermost**, **Telegram**, **WhatsApp**, **IRC**,
+**XMPP/Jabber**, **Twitch**, **Nostr**, **Matrix**, **Twilio/SMS**, **Zulip**,
+and **iMessage**.
 
 You get what a Claude tag in Slack or Block's Buzz gives you - an agent that is a real participant in the conversation, mentionable, threaded, with history - except nothing is paired. Those products pick the harness _and_ the platform for you. Pantalk keeps both ends pluggable: harnesses attach on one edge, platforms on the other, and swapping either is a line of YAML.
 
@@ -45,11 +49,14 @@ pantalk stream --bot ops-bot --notify
 
 ### See it working
 
-[**Pantalk Station**](https://github.com/pantalk/station) is the showcase. A browser-accessible Linux desktop with Pantalk, Codex, and Claude Code already installed and registered as agents, plus one-command deployments that stand up a real Mattermost or IRC server next to it:
+[**Pantalk Ghost**](https://github.com/pantalk/ghost) is the showcase. It is
+a browser-accessible Linux desktop with Pantalk, Codex, Claude Code, and Kimi
+Code installed. Codex and Claude Code are registered in the starter config, and
+one-command deployments stand up a real Mattermost or IRC server next to it:
 
 ```bash
-docker run --detach --name pantalk-station --shm-size 1g \
-  --publish 127.0.0.1:6902:6901 ghcr.io/pantalk/station:latest
+docker run --detach --name pantalk-ghost --shm-size 1g \
+  --publish 127.0.0.1:6902:6901 ghcr.io/pantalk/ghost:latest
 ```
 
 Open <http://127.0.0.1:6902>, log into a harness, and it is in chat. Changing which harness answers is one line of config.
@@ -59,17 +66,16 @@ Open <http://127.0.0.1:6902>, log into a harness, and it is in chat. Changing wh
 | Repo                                          | Description                                            |
 | --------------------------------------------- | ------------------------------------------------------ |
 | [pantalk](https://github.com/pantalk/pantalk) | Daemon, CLI, and documentation                         |
-| [station](https://github.com/pantalk/station) | Prebuilt desktop showcasing harness-to-platform wiring |
+| [ghost](https://github.com/pantalk/ghost)      | Prebuilt desktop showcasing harness-to-platform wiring |
 | [skills](https://github.com/pantalk/skills)   | Skill definitions any agentic harness can consume      |
 
-### Companion Projects
+### Ecosystem
 
-| Repo                                          | Description                                  |
-| --------------------------------------------- | -------------------------------------------- |
-| [MCPShim](https://github.com/mcpshim/mcpshim) | Use any MCP server as a standard CLI command |
-| [crmkit](https://github.com/crmkit/crmkit)    | An agent-first CRM your AI drives directly   |
-
-Pantalk plugs your harness into the platforms people talk on. [MCPShim](https://mcpshim.dev) plugs tools into the harness. Together they form a complete agent infrastructure stack.
+| Project                                       | Role                                                           |
+| --------------------------------------------- | -------------------------------------------------------------- |
+| [zot](https://github.com/openzot/openzot)     | Run complete coding tasks autonomously from a single brief     |
+| [MCPShim](https://github.com/mcpshim/mcpshim) | Turn MCP servers and HTTP APIs into standard CLI commands      |
+| [crmkit](https://github.com/crmkit/crmkit)    | Give agents a shared CRM and system of record over HTTP or MCP |
 
 ### Get Started
 
