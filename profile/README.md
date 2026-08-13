@@ -51,15 +51,13 @@ pantalk stream --bot ops-bot --notify
 
 [**Pantalk Ghost**](https://github.com/pantalk/ghost) is the showcase. It is
 a browser-accessible Linux desktop with Pantalk, Codex, Claude Code, and Kimi
-Code installed. Codex and Claude Code are registered in the starter config, and
-one-command deployments stand up a real Mattermost or IRC server next to it:
-
-```bash
-docker run --detach --name pantalk-ghost --shm-size 1g \
-  --publish 127.0.0.1:6902:6901 ghcr.io/pantalk/ghost:latest
-```
-
-Open <http://127.0.0.1:6902>, log into a harness, and it is in chat. Changing which harness answers is one line of config.
+Code installed. The recommended way to run it is with
+[Launcher](https://github.com/pdparchitect/launcher): download the
+[latest release](https://github.com/pdparchitect/launcher/releases/latest),
+open **Marketplace**, install **Pantalk Ghost**, and choose **Open agent**.
+Launcher manages the local container, persistent storage, lifecycle, and
+updates. Log into a harness, and it is in chat. Changing which harness answers
+is one line of config.
 
 ### Repositories
 
